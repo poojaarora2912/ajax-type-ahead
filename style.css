@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(118, 222, 222);
+    text-align: center;
+    align-items: center;
+}
+.search-form{
+    margin:4rem;
+}
+
+.search{
+border-radius: 4rem;
+border-width: 1px;
+border-color: black;
+width:25rem;
+height:3rem;
+font-style: italic;
+font-family:'Times New Roman', Times, serif;
+font-size: 1rem;
+}
+/* .output{
+    list-style: none;
+} */
