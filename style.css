@@ -17,6 +17,14 @@ font-style: italic;
 font-family:'Times New Roman', Times, serif;
 font-size: 1rem;
 }
-/* .output{
+.output{
     list-style: none;
-} */
+    border-radius: 5px;
+}
+.output li {
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+    border-radius: 0%;
+    height:30px;
+  }

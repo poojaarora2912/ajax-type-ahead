@@ -20,9 +20,21 @@ function findmatch(wordmatch, cities){
 function display(){
     const matches = findmatch(this.value, cities);
     console.log(matches);
+    const html = matches.map(place => {
+        const regex = new RegExp(this.value, 'gi');
+        const cityName = place.city.replace(regex, `<span class="h1">${this.value}</span>`);
+        const stateName = place.state.replace(regex, `<span class="h1">${this.value}</span>`);
+        return`
+        <li>
+            <span class="name">${cityName}, ${stateName}</span>
+        </li>
+        `;
+    }).join('');
+    console.log(html);
+    output.innerHTML = html;
 }
 
 const search = document.querySelector('.search');
-
+const output = document.querySelector('.output');
 search.addEventListener('change', display);
 search.addEventListener('keyup', display);
